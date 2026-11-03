@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/banner.png" alt="PEKKA-AI Banner" width="100%">
+</p>
+
 # PEKKA AI
 
 ## Autonomous AI for Critical Infrastructure — Power Grid & Transformer Monitoring

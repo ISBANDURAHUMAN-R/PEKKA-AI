@@ -8,12 +8,12 @@
 PEKKA AI is an autonomous decision-support system designed for monitoring critical electrical infrastructure with a focus on power grid transformers. It continuously processes 18 real-time sensor streams to detect operational anomalies, predict potential component failures, and calculate risk scores. The platform functions strictly as a human-in-the-loop decision-support tool, providing preventive recommendations while leaving operational switching decisions to qualified operators.
 
 ## ❖ Key Features
-- ▪ Ingestion pipeline for 18 live telemetry streams including top-oil temperature, winding temperature, vibration, and dissolved gas analysis (DGA).
-- ▫ Dual-layer anomaly detection utilizing rule-based physical safety limit validation and an Isolation Forest machine learning model.
-- ▴ Predictive failure classification engine powered by a Random Forest algorithm.
-- ▿ 0 to 100 composite operational disruption risk scoring engine.
-- ⬡ Interactive operator web dashboard displaying telemetry charts, warning levels, and operational recommendations.
-- · Java-based telemetry simulation harness for reproducible stress testing across normal, warning, and critical scenarios.
+- Ingestion pipeline for 18 live telemetry streams including top-oil temperature, winding temperature, vibration, and dissolved gas analysis (DGA).
+- Dual-layer anomaly detection utilizing rule-based physical safety limit validation and an Isolation Forest machine learning model.
+- Predictive failure classification engine powered by a Random Forest algorithm.
+- 0 to 100 composite operational disruption risk scoring engine.
+- Interactive operator web dashboard displaying telemetry charts, warning levels, and operational recommendations.
+- Java-based telemetry simulation harness for reproducible stress testing across normal, warning, and critical scenarios.
 
 ## ⬢ Technologies Used
 - Python 3.10+

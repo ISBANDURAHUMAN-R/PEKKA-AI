@@ -1072,27 +1072,27 @@ PEKKA AI/
 
 | Component                | Status       |
 | ------------------------ | ------------ |
-| Java Sensor Simulator    | ✅ Integrated |
-| 18 Live Sensors          | ✅            |
-| FastAPI Backend          | ✅            |
-| Feature Engineering      | ✅            |
-| Rule-Based Safety        | ✅            |
-| Isolation Forest         | ✅            |
-| Random Forest            | ✅            |
-| Risk Engine              | ✅            |
-| Recommendation Engine    | ✅            |
-| React Frontend           | ✅            |
-| Live Telemetry           | ✅            |
-| Equipment Switching      | ✅            |
-| NORMAL Scenario          | ✅            |
-| WARNING Scenario         | ✅            |
-| CRITICAL Scenario        | ✅            |
-| Backend Offline Handling | ✅            |
-| Backend Recovery         | ✅            |
-| Python Tests             | ✅ 38 passed  |
-| Java Tests               | ✅ 12 passed  |
-| Frontend Build           | ✅            |
-| Frontend Lint            | ✅            |
+| Java Sensor Simulator    | ✓ Integrated |
+| 18 Live Sensors          | ✓            |
+| FastAPI Backend          | ✓            |
+| Feature Engineering      | ✓            |
+| Rule-Based Safety        | ✓            |
+| Isolation Forest         | ✓            |
+| Random Forest            | ✓            |
+| Risk Engine              | ✓            |
+| Recommendation Engine    | ✓            |
+| React Frontend           | ✓            |
+| Live Telemetry           | ✓            |
+| Equipment Switching      | ✓            |
+| NORMAL Scenario          | ✓            |
+| WARNING Scenario         | ✓            |
+| CRITICAL Scenario        | ✓            |
+| Backend Offline Handling | ✓            |
+| Backend Recovery         | ✓            |
+| Python Tests             | ✓ 38 passed  |
+| Java Tests               | ✓ 12 passed  |
+| Frontend Build           | ✓            |
+| Frontend Lint            | ✓            |
 
 ---
 

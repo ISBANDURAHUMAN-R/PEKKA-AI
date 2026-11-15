@@ -4,8 +4,31 @@
 
 # ◈ PEKKA AI
 
+[![CI](https://github.com/ISBANDURAHUMAN-R/PEKKA-AI/actions/workflows/ci.yml/badge.svg)](https://github.com/ISBANDURAHUMAN-R/PEKKA-AI/actions)
+
 ## ◆ About the Project
 PEKKA AI is an autonomous decision-support system designed for monitoring critical electrical infrastructure with a focus on power grid transformers. It continuously processes 18 real-time sensor streams to detect operational anomalies, predict potential component failures, and calculate risk scores. The platform functions strictly as a human-in-the-loop decision-support tool, providing preventive recommendations while leaving operational switching decisions to qualified operators.
+
+```mermaid
+flowchart TD
+    subgraph Ingestion["Telemetry Stream Ingestion"]
+        Sensors["18 Real-Time Sensor Feeds<br/>(DGA, Top-Oil & Winding Temp, Vibration)"] --> Harness["Java/Spring Boot Simulation Harness"]
+        Harness --> Ingest["FastAPI Ingestion Pipeline"]
+    end
+    subgraph Analytics["Dual-Layer Analytics"]
+        Ingest --> FE["Feature Engineering Engine"]
+        FE --> Rule["Rule-Based Safety Limits (Physical Bounds)"]
+        FE --> ML["Isolation Forest Anomaly Detector"]
+        FE --> RF["Random Forest Failure Classifier"]
+    end
+    subgraph Decision["Decision Support & Risk Engine"]
+        Rule --> Risk["Composite Disruption Risk Scoring (0–100)"]
+        ML --> Risk
+        RF --> Risk
+        Risk --> Rec["Prescriptive Operator Recommendations"]
+    end
+    Rec --> UI["React & Vite Operator Command Center"]
+```
 
 ## ❖ Key Features
 - Ingestion pipeline for 18 live telemetry streams including top-oil temperature, winding temperature, vibration, and dissolved gas analysis (DGA).
